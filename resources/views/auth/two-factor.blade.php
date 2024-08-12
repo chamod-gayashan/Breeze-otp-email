@@ -12,7 +12,7 @@
             <div class="card shadow-none">
                 <div class="card-body p-sm-6">
                     <div class="text-center">
-                        <a href="{{url('/home')}}"><img src="{{asset('build/assets/images/brand/ff_logo.png')}}" class="header-brand-img" style="height: 80px;" alt="FAIRFIRST"></a>
+                        <a href="{{url('/home')}}"><img src="{{ URL::asset('storage/logo/image.png')}}" class="header-brand-img" style="height: 80px;" alt="FAIRFIRST"></a>
                     </div><br>
                     <div class="text-center mb-4">
                         <h4 class="mb-1">Sample OTP Verfication</h4>

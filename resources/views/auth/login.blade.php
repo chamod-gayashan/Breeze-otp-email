@@ -19,11 +19,11 @@
                             <div class="card shadow-none">
                                 <div class="card-body p-sm-6">
                                     <div class="text-center">
-                                        <a href="{{url('index')}}"><img src="{{asset('build/assets/images/brand/ff_logo.png')}}" class="header-brand-img" style="height: 80px;" alt="FAIRFIRST"></a>
+                                        <a href="{{url('/login')}}"><img src="{{ URL::asset('storage/logo/image.png')}}" class="header-brand-img" style="height: 80px;" alt="FAIRFIRST"></a>
                                     </div><br>
                                     <div class="text-center mb-4">
-                                        <h4 class="mb-1">AHH Quick Quotation</h4>
-                                        <p>Fairfirst Worlwide Healthcare</p>
+                                        <h4 class="mb-1">Prototype OTP Sender</h4>
+                                        <p>Testing Purpose Only</p>
                                     </div>
                                     <form method="POST" action="{{ route('login') }}">
                                         @csrf

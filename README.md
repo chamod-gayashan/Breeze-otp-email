@@ -1,2 +1,1 @@
-# NEWFF
- 
+Laravel Breeze login otp implementation

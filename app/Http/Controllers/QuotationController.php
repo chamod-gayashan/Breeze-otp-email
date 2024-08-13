@@ -115,24 +115,8 @@ class QuotationController extends Controller
 
 
     public function home(){
-        $quotations = DB::table('quotations')
-                        ->latest('id')
-                        ->take(5)
-                        ->get();
 
-        $totalQuotations = DB::table('quotations')->count();
-
-        $ThisMonthQt = DB::table('quotations')
-                                ->whereMonth('created_at', date('m'))
-                                ->whereYear('created_at', date('Y'))
-                                ->count();
-
-        $lastMonthQt = DB::table('quotations')
-                                ->whereMonth('created_at', date('m', strtotime('-1 month')))
-                                ->whereYear('created_at', date('Y', strtotime('-1 month')))
-                                ->count();
-
-        return view('broker.index', compact('quotations', 'totalQuotations', 'ThisMonthQt', 'lastMonthQt'));
+        return view('broker.index');
     }
-    
+
 }
